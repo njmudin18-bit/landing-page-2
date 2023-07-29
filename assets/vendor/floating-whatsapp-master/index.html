@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Floating WhatsApp Button Demo</title>
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="floating-wpp.css">
+    <script type="text/javascript" src="floating-wpp.js"></script>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif
+        }
+    </style>
+</head>
+
+<body>
+    <div id="myButton"></div>
+</body>
+
+<script type="text/javascript">
+    $(function () {
+        $('#myButton').floatingWhatsApp({
+            phone: '+6281298061129',
+            popupMessage: 'Hi, ada yang bisa kami bantu?',
+            message: "Saya ingin bertanya mengenai produk-produk",
+            showPopup: true,
+            showOnIE: false,
+            headerTitle: 'Selamat Datang!',
+            headerColor: '#128C7E',
+            backgroundColor: '#128C7E',
+            buttonImage: '<img src="whatsapp.svg" />'
+        });
+    });
+</script>
+
+</html>
